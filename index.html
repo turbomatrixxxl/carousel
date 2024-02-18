@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carousel</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <a href="./original.html">Original</a>
+    <div class="card-carousel" id="debug_id_1">
+      <div class="inner-carousel">
+        <div>
+          <img
+            class="hero-carousel-image"
+            alt="wrist-watch 1"
+            srcset="
+              ./images/hero-carousel/carousel1.png    1x,
+              ./images/hero-carousel/carousel1-2x.png 2x
+            "
+            src="./images/hero-carousel/carousel1.png" />
+        </div>
+        <div>
+          <img
+            class="hero-carousel-image"
+            alt="wrist-watch 2"
+            srcset="
+              ./images/hero-carousel/carousel2.png    1x,
+              ./images/hero-carousel/carousel2-2x.png 2x
+            "
+            src="./images/hero-carousel/carousel2.png" />
+        </div>
+        <div>
+          <img
+            class="hero-carousel-image"
+            alt="wrist-watch 3"
+            srcset="
+              ./images/hero-carousel/carousel3.png    1x,
+              ./images/hero-carousel/carousel3-2x.png 2x
+            "
+            src="./images/hero-carousel/carousel3.png" />
+        </div>
+        <div>
+          <img
+            class="hero-carousel-image"
+            alt="wrist-watch 4"
+            srcset="
+              ./images/hero-carousel/carousel4.png    1x,
+              ./images/hero-carousel/carousel4-2x.png 2x
+            "
+            src="./images/hero-carousel/carousel4.png" />
+        </div>
+        <div>
+          <img
+            class="hero-carousel-image"
+            alt="wrist-watch 5"
+            srcset="
+              ./images/hero-carousel/carousel5.png    1x,
+              ./images/hero-carousel/carousel5-2x.png 2x
+            "
+            src="./images/hero-carousel/carousel5.png" />
+        </div>
+      </div>
+
+      <div class="carousel-image-card-presentation">
+        <button
+          class="button-spin clockwise left"
+          type="button"
+          onclick="onBack()">
+          <svg class="hero-carousel-image-card-button-svg">
+            <use href="./images/icons.svg#icon-chevron-left"></use>
+          </svg>
+        </button>
+        <button
+          class="button-spin counterclockwise right"
+          type="button"
+          onclick="onNext()">
+          <svg class="hero-carousel-image-card-button-svg">
+            <use href="./images/icons.svg#icon-chevron-right"></use>
+          </svg>
+        </button>
+        <div class="hero-carousel-image-card-buttons-numbers">
+          <div class="hero-carousel-numbers-iteration">
+            <span
+              class="hero-carousel-numbers-iteration-span"
+              data-carousel-item
+              >01</span
+            >
+            <span
+              class="hero-carousel-numbers-iteration-span"
+              data-carousel-item
+              >02</span
+            >
+            <span
+              class="hero-carousel-numbers-iteration-span"
+              data-carousel-item
+              >03</span
+            >
+            <span
+              class="hero-carousel-numbers-iteration-span"
+              data-carousel-item
+              >04</span
+            >
+            <span
+              class="hero-carousel-numbers-iteration-span"
+              data-carousel-item
+              >05</span
+            >
+          </div>
+          <div class="hero-carousel-svg-and-span">
+            <svg class="hero-carousel-image-card-buttons-numbers-svg">
+              <use href="./images/icons.svg#icon-line"></use>
+            </svg>
+            <span class="hero-carousel-svg-and-span-five">05</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
